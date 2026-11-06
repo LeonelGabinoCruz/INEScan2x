@@ -1,0 +1,11 @@
+# Datos personales: PDFs generados con la credencial
+salidas/
+*.pdf
+# Binarios (se publican como Release, no dentro del repo)
+INSTALADOR/*.exe
+INSTALADOR/salida/
+build/
+dist/
+*.spec
+__pycache__/
+*.pyc
