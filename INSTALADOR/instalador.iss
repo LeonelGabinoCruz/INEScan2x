@@ -2,7 +2,7 @@
 [Setup]
 AppId={{7B1E5C52-3A64-4F0B-9E1D-1AE5CA42B001}
 AppName=INEScan 2x
-AppVersion=1.0
+AppVersion=1.1
 AppPublisher=INEScan
 DefaultDirName={autopf}\INEScan 2x
 DefaultGroupName=INEScan 2x

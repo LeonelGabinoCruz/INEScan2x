@@ -33,6 +33,7 @@ if getattr(sys, "frozen", False):          # instalado como .exe: guardar en Doc
 else:
     CARPETA = os.path.join(os.path.dirname(os.path.abspath(__file__)), "salidas")
 CONFIG = os.path.join(CARPETA, "config.json")
+ICONO_APP = os.path.join(getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__))), "icono.ico")
 
 
 def cargar_config():
@@ -752,6 +753,10 @@ class App(tk.Tk):
     def __init__(self):
         super().__init__()
         self.title("INEScan 2x")
+        try:
+            self.iconbitmap(default=ICONO_APP)        # icono de la app (también en las ventanas hijas)
+        except Exception:
+            pass                                       # sin icono no es crítico
         ancho, alto = 800, 660
         x = (self.winfo_screenwidth() - ancho) // 2
         y = (self.winfo_screenheight() - alto) // 2
