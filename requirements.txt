@@ -3,3 +3,4 @@ pillow
 reportlab
 numpy
 opencv-python-headless
+pymupdf
